@@ -10,10 +10,10 @@ The dataset contains information about houses, including both numerical and cate
 Categorical features such as location, condition, and garage availability are encoded before training the model.
 
 ## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
 
 ## Methodology
 1. Loaded the house price dataset.
@@ -23,18 +23,41 @@ Categorical features such as location, condition, and garage availability are en
 5. Evaluated the model using MAE, RMSE, and R² metrics.
 6. Compared Linear Regression with Ridge Regression.
 7. Selected the final model based on performance.
-8. Demonstrated prediction using an example input.
+8. Demonstrated prediction using an example input from the test dataset.
 
 ## Results
-- The model performance was evaluated using standard regression metrics.
+- The model performance was evaluated using standard regression metrics such as MAE, RMSE, and R².
 - Linear Regression and Ridge Regression produced similar results.
-- An example prediction shows the predicted house price compared with the actual price.
+- The evaluation showed that the model has limited predictive power on the given dataset, indicating underfitting.
 
+## Output
+When the script is executed, the following outputs are displayed in the console:
+- Model evaluation metrics (MAE, RMSE, and R² scores)
+- Feature coefficients for interpretability
+- Train vs Test R² scores
+- An example house price prediction along with the actual price for comparison
+
+## How to Run
+1. Ensure Python is installed on your system.
+2. Install the required libraries: Pandas, NumPy, and Scikit-learn.
+3. Update the dataset file path in `main.py` if required.
+4. Run the script using:
+   ```bash
+   python main.py
+   ```
+   
 ## Conclusion
-This project demonstrates an end-to-end machine learning workflow for a regression problem, including data preprocessing, model training, evaluation, and prediction.
+This project demonstrates an end-to-end machine learning workflow for a regression problem, including data preprocessing, model training, evaluation, model comparison, and prediction.  
+Although the model performance is limited, the project successfully illustrates the complete machine learning pipeline and evaluation process.
 
 ## Future Improvements
-- Try non-linear models such as Random Forest or Gradient Boosting.
-- Improve feature engineering.
-- Deploy the model as a web application.
+- Apply non-linear models such as Random Forest or Gradient Boosting.
+- Perform better feature engineering.
+- Tune hyperparameters for improved performance.
+
+## Dataset Note
+The dataset file is not included in this repository. Please update the dataset file path in the code before running the project.
+
+## Author
+Fardeen
 
